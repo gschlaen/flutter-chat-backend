@@ -2,6 +2,10 @@ const { Schema, model} = require('mongoose');
 
 const UsuarioSchema = Schema({
 
+    online: {
+        type: Boolean,
+        default: false
+    },
     nombre: {
         type: String,
         required: true
@@ -14,10 +18,6 @@ const UsuarioSchema = Schema({
     password: {
         type: String,
         required: true
-    },
-    online: {
-        type: Boolean,
-        default: false
     },
 
 
